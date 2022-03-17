@@ -1,7 +1,5 @@
 import random
 import os
-import json
-import sys
 from functools import reduce
 from common.common import (
     get_config_file,

@@ -18,12 +18,6 @@ typedef enum {
     MAPPING_PROTEIN
 } input_mapping;
 
-typedef enum {
-    OUTPUT_STD,
-    OUTPUT_FILE,
-    OUTPUT_BOTH
-} output_t;
-
 typedef struct {
     size_t                   mapped_count_symbols;// how many symbol types present in fact (may be equal or more then mahds_symbolic_sequence->count_symbols)
     size_t                   original_count_symbols;
