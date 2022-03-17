@@ -25,7 +25,7 @@ sequences_info* fill_artificial_seq_info (kseq_t* original_set, char with_gaps){
             sprintf(bu, " %s", original_set->comment.s);
             strcat(buf, bu);
         }
-        res->mapping_info->original_headers[res->seq_set->seq_number-1] = (char*)malloc(strlen(buf) * sizeof(char));
+        res->mapping_info->original_headers[res->seq_set->seq_number-1] = (char*)malloc((strlen(buf)+1) * sizeof(char));
         strcpy(res->mapping_info->original_headers[res->seq_set->seq_number-1], buf);
 
         res->seq_set->sequences = (mahds_symbolic_sequence**)realloc((void*)res->seq_set->sequences, res->seq_set->seq_number*sizeof(mahds_symbolic_sequence*));
@@ -133,7 +133,7 @@ sequences_info* fill_protein_seq_info (kseq_t* original_set, char with_gaps) { /
             sprintf(bu, " %s", original_set->comment.s);
             strcat(buf, bu);
         }
-        res->mapping_info->original_headers[res->seq_set->seq_number-1] = (char*)malloc(strlen(buf) * sizeof(char));
+        res->mapping_info->original_headers[res->seq_set->seq_number-1] = (char*)malloc((strlen(buf)+1) * sizeof(char));
         strcpy(res->mapping_info->original_headers[res->seq_set->seq_number-1], buf);
         //printf("stored: %s\n", res->mapping_info->original_headers[res->seq_set->seq_number-1]);
         //printf("buffer: %s\n____\n", buf);
