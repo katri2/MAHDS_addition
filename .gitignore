@@ -1,3 +1,5 @@
+!.gitignore
+
 # Prerequisites
 *.d
 
@@ -50,3 +52,9 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+!/fmax/install
+/fmax/install/*
+!/fmax/install/cfgdir
+
+*__pycache__

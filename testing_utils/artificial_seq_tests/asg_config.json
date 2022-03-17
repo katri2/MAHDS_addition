@@ -1,0 +1,10 @@
+{
+    "dst_dir":"~/asg_dst",
+    "pivot_seq_length":600,
+    "heirs_num":100,
+    "params":[
+        {"ic":5,"il":5,"dc":5,"dl":5,"scm":0.3,"sl":1},
+        {"ic":5,"il":5,"dc":5,"dl":5,"scm":0.9,"sl":1},
+        {"ic":5,"il":5,"dc":5,"dl":5,"scm":1.5,"sl":1}
+    ]
+}

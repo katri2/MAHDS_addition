@@ -1,0 +1,35 @@
+{
+    "src_dir":"~/eet_src",
+    "dst_dir":"~/eet_dst",
+    "clients_dir":"~/EMBL-EBI_methods/clients",
+    "log_file":"~/eet_log",
+    "params":{
+        "method_params":{
+            "clustalo":{
+                "out_prefix":"",
+                "base_param_str":"--email your@email.qwe --stype protein --outfmt fa --order input --quiet"
+            },
+            "kalign":{
+                "out_prefix":"",
+                "base_param_str":"--email your@email.qwe --stype protein --format fasta --quiet"
+            },
+            "mafft":{
+                "out_prefix":"",
+                "base_param_str":"--email your@email.qwe --stype protein --format fasta --order input --quiet"
+            },
+            "muscle":{
+                "out_prefix":"",
+                "base_param_str":"--email your@email.qwe --format fasta --quiet"
+            },
+            "prank":{
+                "out_prefix":"",
+                "base_param_str":"--email your@email.qwe --quiet"
+            },
+            "tcoffee":{
+                "out_prefix":"",
+                "base_param_str":"--email your@email.qwe --stype protein --format fasta_aln --order input --quiet"
+            }
+        },
+        "rewrite":false
+    }
+}

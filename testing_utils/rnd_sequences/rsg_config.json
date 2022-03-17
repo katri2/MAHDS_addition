@@ -1,0 +1,9 @@
+{
+    "dst_dir":"~/rsg_dst",
+    "sets_num":100,
+    "seqs_conf":[
+        {"number":40,"length":900},
+        {"number":40,"length":300},
+        {"number":20,"length":600}
+    ]
+}
